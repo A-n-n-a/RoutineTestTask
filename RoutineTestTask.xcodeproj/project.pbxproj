@@ -34,7 +34,7 @@
 		956370832CE5EB9C007BF4CF /* CustomNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavBar.swift; sourceTree = "<group>"; };
 		956370872CE60BAC007BF4CF /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		956370892CE60BE4007BF4CF /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
-		95D1D2FB2CE5CFEA00403334 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D1D2FB2CE5CFEA00403334 /* RoutineTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoutineTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D1D2FE2CE5CFEA00403334 /* TestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskApp.swift; sourceTree = "<group>"; };
 		95D1D3002CE5CFEA00403334 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		95D1D3022CE5CFEC00403334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -104,7 +104,7 @@
 		95D1D2FC2CE5CFEA00403334 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				95D1D2FB2CE5CFEA00403334 /* TestTask.app */,
+				95D1D2FB2CE5CFEA00403334 /* RoutineTestTask.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,9 +145,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		95D1D2FA2CE5CFEA00403334 /* TestTask */ = {
+		95D1D2FA2CE5CFEA00403334 /* RoutineTestTask */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 95D1D3092CE5CFEC00403334 /* Build configuration list for PBXNativeTarget "TestTask" */;
+			buildConfigurationList = 95D1D3092CE5CFEC00403334 /* Build configuration list for PBXNativeTarget "RoutineTestTask" */;
 			buildPhases = (
 				95D1D2F72CE5CFEA00403334 /* Sources */,
 				95D1D2F82CE5CFEA00403334 /* Frameworks */,
@@ -157,9 +157,9 @@
 			);
 			dependencies = (
 			);
-			name = TestTask;
+			name = RoutineTestTask;
 			productName = TestTask;
-			productReference = 95D1D2FB2CE5CFEA00403334 /* TestTask.app */;
+			productReference = 95D1D2FB2CE5CFEA00403334 /* RoutineTestTask.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -177,7 +177,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 95D1D2F62CE5CFEA00403334 /* Build configuration list for PBXProject "TestTask" */;
+			buildConfigurationList = 95D1D2F62CE5CFEA00403334 /* Build configuration list for PBXProject "RoutineTestTask" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -190,7 +190,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				95D1D2FA2CE5CFEA00403334 /* TestTask */,
+				95D1D2FA2CE5CFEA00403334 /* RoutineTestTask */,
 			);
 		};
 /* End PBXProject section */
@@ -367,6 +367,7 @@
 				DEVELOPMENT_TEAM = X8E2R8HQQL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Routine Test Task";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -396,6 +397,7 @@
 				DEVELOPMENT_TEAM = X8E2R8HQQL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Routine Test Task";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -417,7 +419,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		95D1D2F62CE5CFEA00403334 /* Build configuration list for PBXProject "TestTask" */ = {
+		95D1D2F62CE5CFEA00403334 /* Build configuration list for PBXProject "RoutineTestTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95D1D3072CE5CFEC00403334 /* Debug */,
@@ -426,7 +428,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		95D1D3092CE5CFEC00403334 /* Build configuration list for PBXNativeTarget "TestTask" */ = {
+		95D1D3092CE5CFEC00403334 /* Build configuration list for PBXNativeTarget "RoutineTestTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				95D1D30A2CE5CFEC00403334 /* Debug */,
