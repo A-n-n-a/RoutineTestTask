@@ -16,15 +16,23 @@ struct RoutineCategoryView: View {
             HStack {
                 Image(imageName)
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 92, height: 92)
                 Text(category)
-                    .font(.headline)
-                    .padding()
+                    .font(.custom("Karl-Regular", size: 14))
+                    .foregroundColor(.black)
+                    .padding(.horizontal, 15)
+
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .multilineTextAlignment(.leading)
                 Spacer()
             }
-            .background(Color.blue.opacity(0.1))
-            .cornerRadius(8)
-            .padding()
+            .background(Color("blue_0C8CE9").opacity(0.15))
+            .cornerRadius(6)
+            .padding(.horizontal, 20)
         }
     }
+}
+
+#Preview {
+    RoutineCategoryView(category: "DETAILED MORNING ROUTINE TASKS", imageName: "morning")
 }
