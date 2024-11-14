@@ -16,6 +16,11 @@ struct CategoryDetailView: View {
         VStack {
             VStack(spacing: 0) {
                 
+                CustomNavBar(title: category.title) {
+                    selectAll.toggle()
+                    selectedItems = selectAll ? Set(0..<category.tasks.count) : []
+                }
+                
                 HStack {
                     Text(category.subtitle)
                         .font(.custom("Cardo-Regular", size: 28))
@@ -23,7 +28,7 @@ struct CategoryDetailView: View {
                         .padding(.leading, 20)
                     Spacer()
                 }
-                .frame(height: 63)
+                .frame(height: 62)
                 
                 Rectangle()
                     .fill(Color("gray_D0D0D0").opacity(0.2))
@@ -77,10 +82,6 @@ struct CategoryDetailView: View {
                 alignment: .bottomTrailing
             )
         }
-        .navigationBarTitle(category.title, displayMode: .inline)
-        .navigationBarItems(trailing: Button("Select All") {
-            selectAll.toggle()
-            selectedItems = selectAll ? Set(0..<category.tasks.count) : []
-        })
+        .navigationBarHidden(true)
     }
 }

@@ -17,6 +17,7 @@
 		95D1D30F2CE5D05900403334 /* RoutineCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */; };
 		95D1D3112CE5D07E00403334 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3102CE5D07E00403334 /* CategoryDetailView.swift */; };
 		95D1D3132CE5D12100403334 /* RoutineTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3122CE5D12100403334 /* RoutineTaskView.swift */; };
+		95DF80602CE65592005C73D4 /* CustomSimpleNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF805F2CE65592005C73D4 /* CustomSimpleNavBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCategoryView.swift; sourceTree = "<group>"; };
 		95D1D3102CE5D07E00403334 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		95D1D3122CE5D12100403334 /* RoutineTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTaskView.swift; sourceTree = "<group>"; };
+		95DF805F2CE65592005C73D4 /* CustomSimpleNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSimpleNavBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +52,7 @@
 				95D1D3002CE5CFEA00403334 /* HomeView.swift */,
 				95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */,
 				956370832CE5EB9C007BF4CF /* CustomNavBar.swift */,
+				95DF805F2CE65592005C73D4 /* CustomSimpleNavBar.swift */,
 				95D1D30C2CE5D04400403334 /* CustomTabBar.swift */,
 				95D1D3102CE5D07E00403334 /* CategoryDetailView.swift */,
 				95D1D3122CE5D12100403334 /* RoutineTaskView.swift */,
@@ -170,6 +173,7 @@
 				95D1D30F2CE5D05900403334 /* RoutineCategoryView.swift in Sources */,
 				956370842CE5EB9C007BF4CF /* CustomNavBar.swift in Sources */,
 				9563708A2CE60BE4007BF4CF /* Task.swift in Sources */,
+				95DF80602CE65592005C73D4 /* CustomSimpleNavBar.swift in Sources */,
 				956370882CE60BAC007BF4CF /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

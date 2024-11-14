@@ -9,16 +9,35 @@ import SwiftUI
 
 struct CustomNavBar: View {
     let title: String
+    var isBackButtonAvailable: Bool = false
+    var onSelectAllAction: (() -> Void)?
+    @State private var isButtonSelected = false
     
     var body: some View {
         VStack(spacing: 0) {
             
-            HStack {
+            HStack(spacing: 20) {
                 Text(title)
-                    .font(.system(size: 25, weight: .semibold))
-                    .foregroundColor(Color("text_1F2024"))
+                    .font(.custom("Karl-Regular", size: 14))
+                    .foregroundColor(Color("text_0C0F39"))
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .multilineTextAlignment(.leading)
                     .padding(.leading, 20)
-                Spacer()
+                
+                if let onSelectAllAction {
+                    Button(action: {
+                        isButtonSelected.toggle()
+                        onSelectAllAction()
+                    }) {
+                        Text(isButtonSelected ? "Cancel" : "Select All")
+                            .font(.custom("OpenSans-SemiBold", size: 14))
+                            .foregroundColor(isButtonSelected ? Color("text_575767") : .white)
+                            .frame(width: 90, height: 30)
+                            .background(isButtonSelected ? Color("background_C5C6CC").opacity(0.4) : Color("blue_0C8CE9"))
+                            .cornerRadius(15) 
+                    }
+                    .padding(.trailing, 20)
+                }
             }
             .frame(height: 63)
             

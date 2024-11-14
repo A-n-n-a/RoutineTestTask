@@ -13,7 +13,7 @@ struct HomeView: View {
         NavigationView {
             VStack(spacing: 0) {
                 
-                CustomNavBar(title: "Home")
+                CustomSimpleNavBar(title: "Home")
                 
                 ScrollView {
                     VStack(spacing: 16) {
