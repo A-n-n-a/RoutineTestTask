@@ -8,18 +8,48 @@
 import SwiftUI
 
 struct CustomTabBar: View {
+    @Binding var selectedTab: Tab 
+    
     var body: some View {
         HStack {
             Spacer()
-            Image(systemName: "house")
-            Spacer()
-            Image(systemName: "list.bullet")
-            Spacer()
-            Image(systemName: "person")
-            Spacer()
+            ForEach(Tab.allCases, id: \.self) { tab in
+                Button(action: {
+                    withAnimation(.easeInOut(duration: 0.3)) {
+                        selectedTab = tab
+                    }
+                }) {
+                    Image(tab.imageName)
+                        .resizable()
+                        .frame(width: 24, height: 24)
+                        .foregroundColor(selectedTab == tab ? .white : .black)
+                        .padding()
+                        .background(
+                            Circle()
+                                .fill(Color("blue_0C8CE9"))
+                                .frame(width: 50, height: 50)
+                                .opacity(selectedTab == tab ? 1 : 0)
+                        )
+                }
+                Spacer()
+            }
         }
-        .padding()
-        .background(Color.blue.opacity(0.2))
-        .cornerRadius(16)
+        .frame(width: 250, height: 64)
+        .background(Color("blue_0C8CE9").opacity(0.3))
+        .cornerRadius(32)
+    }
+}
+
+enum Tab: String, CaseIterable {
+    case home
+    case list
+    case user
+    
+    var imageName: String {
+        switch self {
+        case .home: return "home"
+        case .list: return "list"
+        case .user: return "user"
+        }
     }
 }

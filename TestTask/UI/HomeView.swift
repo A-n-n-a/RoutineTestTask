@@ -9,6 +9,8 @@ import SwiftUI
 
 struct HomeView: View {
     
+    @State private var selectedTab: Tab = .home
+    
     var body: some View {
         NavigationView {
             VStack(spacing: 0) {
@@ -23,7 +25,7 @@ struct HomeView: View {
                     }
                 }
                 Spacer()
-                CustomTabBar()
+                CustomTabBar(selectedTab: $selectedTab)
             }
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {

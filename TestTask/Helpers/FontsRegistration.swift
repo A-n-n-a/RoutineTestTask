@@ -1,5 +1,5 @@
 //
-//  FontsRegister.swift
+//  FontsRegistration.swift
 //  TestTask
 //
 //  Created by Anna on 11/14/24.

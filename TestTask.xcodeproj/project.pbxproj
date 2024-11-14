@@ -26,7 +26,7 @@
 		95DF806E2CE673A6005C73D4 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95DF806C2CE673A6005C73D4 /* OpenSans-SemiBold.ttf */; };
 		95DF806F2CE673A6005C73D4 /* OpenSans-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95DF806D2CE673A6005C73D4 /* OpenSans-Italic.ttf */; };
 		95DF80712CE67401005C73D4 /* Cardo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95DF80702CE67401005C73D4 /* Cardo-Regular.ttf */; };
-		95DF80742CE676E4005C73D4 /* FontsRegister.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF80732CE676E4005C73D4 /* FontsRegister.swift */; };
+		95DF80742CE676E4005C73D4 /* FontsRegistration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF80732CE676E4005C73D4 /* FontsRegistration.swift */; };
 		95DF80762CE67ACE005C73D4 /* Cardo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 95DF80752CE67ACE005C73D4 /* Cardo-Bold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -51,7 +51,7 @@
 		95DF806C2CE673A6005C73D4 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
 		95DF806D2CE673A6005C73D4 /* OpenSans-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Italic.ttf"; sourceTree = "<group>"; };
 		95DF80702CE67401005C73D4 /* Cardo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cardo-Regular.ttf"; sourceTree = "<group>"; };
-		95DF80732CE676E4005C73D4 /* FontsRegister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsRegister.swift; sourceTree = "<group>"; };
+		95DF80732CE676E4005C73D4 /* FontsRegistration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsRegistration.swift; sourceTree = "<group>"; };
 		95DF80752CE67ACE005C73D4 /* Cardo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cardo-Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -137,7 +137,7 @@
 		95DF80722CE676D0005C73D4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				95DF80732CE676E4005C73D4 /* FontsRegister.swift */,
+				95DF80732CE676E4005C73D4 /* FontsRegistration.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -224,7 +224,7 @@
 				95D1D3132CE5D12100403334 /* RoutineTaskView.swift in Sources */,
 				95D1D30F2CE5D05900403334 /* RoutineCategoryView.swift in Sources */,
 				956370842CE5EB9C007BF4CF /* CustomNavBar.swift in Sources */,
-				95DF80742CE676E4005C73D4 /* FontsRegister.swift in Sources */,
+				95DF80742CE676E4005C73D4 /* FontsRegistration.swift in Sources */,
 				9563708A2CE60BE4007BF4CF /* Task.swift in Sources */,
 				95DF80642CE661DA005C73D4 /* ListView.swift in Sources */,
 				95DF80602CE65592005C73D4 /* CustomSimpleNavBar.swift in Sources */,
