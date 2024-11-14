@@ -29,18 +29,18 @@ struct RoutineTaskView: View {
                             .clipped()
                     }
                 }
-                .tabViewStyle(PageTabViewStyle())
+                .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .frame(height: (task.images == nil ? 0 : (width * 0.65)))
                 .overlay(
-                    HStack {
+                    HStack(spacing: 8) {
                         ForEach(0..<images.count, id: \.self) { index in
                             Circle()
                                 .fill(index == selectedImage ? Color("blue_0C8CE9") : Color.white.opacity(0.4))
                                 .frame(width: 8, height: 8)
                         }
-                        .padding(.leading, 20)
                     }
-                        .padding(.bottom, 22),
+                        .padding(.leading, 20)
+                        .padding(.bottom,  22),
                     alignment: .bottomLeading
                 )
             }
