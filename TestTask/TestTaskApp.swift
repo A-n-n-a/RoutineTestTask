@@ -9,6 +9,11 @@ import SwiftUI
 
 @main
 struct TestTaskApp: App {
+    
+    init() {
+        registerFonts()
+    }
+    
     var body: some Scene {
         WindowGroup {
             HomeView()
