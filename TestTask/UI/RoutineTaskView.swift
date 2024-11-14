@@ -21,12 +21,13 @@ struct RoutineTaskView: View {
         VStack(spacing: 0) {
             if let images = task.images {
                 TabView(selection: $selectedImage) {
-                    ForEach(images, id: \.self) { image in
-                        Image(image)
+                    ForEach(Array(0..<images.count), id: \.self) { index in
+                        Image(images[index])
                             .resizable()
                             .aspectRatio(contentMode: .fill)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
                             .clipped()
+                            .tag(index)
                     }
                 }
                 .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
