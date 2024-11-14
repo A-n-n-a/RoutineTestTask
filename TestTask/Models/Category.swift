@@ -9,6 +9,7 @@ import Foundation
 
 struct Category {
     let title: String
+    let subtitle: String
     let imageName: String
     let tasks: [Task]
 }

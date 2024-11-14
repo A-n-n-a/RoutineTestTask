@@ -36,10 +36,10 @@ struct HomeView: View {
     
     var categories: [Category] {
         return [
-            Category(title: "DETAILED MORNING ROUTINE TASKS", imageName: "morning", tasks: tasks),
-            Category(title: "DAILY WORKDAY FOCUS GOALS AND TASKS TO KEEP YOU ON TRACK", imageName: "daily", tasks: tasks),
-            Category(title: "EVENING WIND-DOWN ROUTINE STEPS", imageName: "evening", tasks: tasks),
-            Category(title: "COMPREHENSIVE SLEEP ROUTINE GOALS", imageName: "sleep", tasks: tasks)
+            Category(title: "DETAILED MORNING ROUTINE TASKS", subtitle: "Wake-Up and Hydration", imageName: "morning", tasks: tasks),
+            Category(title: "DAILY WORKDAY FOCUS GOALS AND TASKS TO KEEP YOU ON TRACK", subtitle: "Wake-Up and Hydration", imageName: "daily", tasks: tasks),
+            Category(title: "EVENING WIND-DOWN ROUTINE STEPS", subtitle: "Wake-Up and Hydration", imageName: "evening", tasks: tasks),
+            Category(title: "COMPREHENSIVE SLEEP ROUTINE GOALS", subtitle: "Wake-Up and Hydration", imageName: "sleep", tasks: tasks)
         ]
     }
     

@@ -11,7 +11,7 @@ struct RoutineCategoryView: View {
     let category: Category
     
     var body: some View {
-        NavigationLink(destination: DetailView(category: category)) {
+        NavigationLink(destination: CategoryDetailView(category: category)) {
             HStack {
                 Image(category.imageName)
                     .resizable()

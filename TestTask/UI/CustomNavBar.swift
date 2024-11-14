@@ -9,6 +9,7 @@ import SwiftUI
 
 struct CustomNavBar: View {
     let title: String
+    
     var body: some View {
         VStack(spacing: 0) {
             
@@ -22,15 +23,11 @@ struct CustomNavBar: View {
             .frame(height: 63)
             
             Rectangle()
-                .fill(Color("gray_D0D0D0").opacity(20))
+                .fill(Color("gray_D0D0D0").opacity(0.2))
                 .frame(height: 2)
                 .padding(.leading, 20)
                 .padding(.trailing, 30)
                 .padding(.bottom, 20)
         }
     }
-}
-
-#Preview {
-    CustomNavBar(title: "Home")
 }
