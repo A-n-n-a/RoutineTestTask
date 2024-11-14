@@ -71,10 +71,13 @@ struct RoutineTaskView: View {
                 Spacer()
                 
                 Button(action: onToggleSelect) {
-                    Image(systemName: isSelected ? "checkmark.circle.fill" : "plus.circle")
-                        .foregroundColor(isSelected ? .blue : .gray)
-                        .imageScale(.large)
+                    Image(systemName: isSelected ? "checkmark" : "plus")
+                        .foregroundColor(isSelected ? .white : .black)
+                        .frame(width: 16, height: 16)
                 }
+                .frame(width: 38, height: 38)
+                .background(isSelected ? Color("blue_0C8CE9") : Color("blue_0C8CE9").opacity(0.05))
+                .cornerRadius(19)
                 .padding(.top, 16)
                 .padding(.trailing, 16)
             }

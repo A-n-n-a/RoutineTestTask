@@ -26,7 +26,7 @@ struct CustomNavBar: View {
                 .fill(Color("gray_D0D0D0").opacity(0.2))
                 .frame(height: 2)
                 .padding(.leading, 20)
-                .padding(.trailing, 30)
+                .padding(.trailing, 20)
                 .padding(.bottom, 20)
         }
     }

@@ -18,8 +18,8 @@ struct CategoryDetailView: View {
                 
                 HStack {
                     Text(category.subtitle)
-                        .font(.system(size: 25, weight: .semibold))
-                        .foregroundColor(Color("text_1F2024"))
+                        .font(.custom("Cardo-Regular", size: 28))
+                        .foregroundColor(Color.black)
                         .padding(.leading, 20)
                     Spacer()
                 }
@@ -29,8 +29,7 @@ struct CategoryDetailView: View {
                     .fill(Color("gray_D0D0D0").opacity(0.2))
                     .frame(height: 2)
                     .padding(.leading, 20)
-                    .padding(.trailing, 30)
-                    .padding(.bottom, 20)
+                    .padding(.trailing, 20)
             }
             ScrollView {
                 VStack(spacing: 12) {
