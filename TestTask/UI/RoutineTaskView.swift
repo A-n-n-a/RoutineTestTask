@@ -45,32 +45,40 @@ struct RoutineTaskView: View {
                 )
             }
             
-            VStack(alignment: .leading, spacing: 8) {
-                Text(task.title)
-                    .font(.headline)
-                
-                if let description = task.description {
-                    Text(description)
-                        .font(.subheadline)
-                        .foregroundColor(.gray)
+            HStack(alignment: .top, spacing: 13) {
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(task.title)
+                        .font(.custom("Cardo-Regular", size: 18))
+                        .foregroundColor(Color("text_0C0F39"))
+                    
+                    if let description = task.description {
+                        Text(description)
+                            .font(.custom("OpenSans-Italic", size: 14))
+                            .foregroundColor(Color("text_575767"))
+                    }
+                    
+                    if let tags = task.tags {
+                        Text(tags)
+                            .font(.custom("OpenSans-Regular", size: 14))
+                            .foregroundColor(Color("blue_0C8CE9"))
+                    }
                 }
+                .padding(.leading, 16)
+                .padding(.top, 16)
+                .padding(.bottom, 16)
                 
-                if let tags = task.tags {
-                    Text(tags)
-                        .font(.caption)
-                        .foregroundColor(.blue)
+                Spacer()
+                
+                Button(action: onToggleSelect) {
+                    Image(systemName: isSelected ? "checkmark.circle.fill" : "plus.circle")
+                        .foregroundColor(isSelected ? .blue : .gray)
+                        .imageScale(.large)
                 }
-            }
-            .frame(width: width)
-            
-            Spacer()
-            
-            Button(action: onToggleSelect) {
-                Image(systemName: isSelected ? "checkmark.circle.fill" : "plus.circle")
-                    .foregroundColor(isSelected ? .blue : .gray)
-                    .imageScale(.large)
+                .padding(.top, 16)
+                .padding(.trailing, 16)
             }
         }
+        .frame(width: width)
         .background(Color("background_FFFCFC"))
         .cornerRadius(20)
         .shadow(color: Color("shadow_0C0C0D").opacity(0.1), radius: 32, x: 0, y: 0)
