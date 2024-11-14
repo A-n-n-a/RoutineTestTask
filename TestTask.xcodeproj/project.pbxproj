@@ -8,17 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		95D1D2FF2CE5CFEA00403334 /* TestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D2FE2CE5CFEA00403334 /* TestTaskApp.swift */; };
-		95D1D3012CE5CFEA00403334 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3002CE5CFEA00403334 /* ContentView.swift */; };
+		95D1D3012CE5CFEA00403334 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3002CE5CFEA00403334 /* HomeView.swift */; };
 		95D1D3032CE5CFEC00403334 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1D3022CE5CFEC00403334 /* Assets.xcassets */; };
 		95D1D3062CE5CFEC00403334 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D1D3052CE5CFEC00403334 /* Preview Assets.xcassets */; };
+		95D1D30D2CE5D04400403334 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D30C2CE5D04400403334 /* CustomTabBar.swift */; };
+		95D1D30F2CE5D05900403334 /* RoutineCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */; };
+		95D1D3112CE5D07E00403334 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3102CE5D07E00403334 /* DetailView.swift */; };
+		95D1D3132CE5D12100403334 /* RoutineTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3122CE5D12100403334 /* RoutineTaskView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		95D1D2FB2CE5CFEA00403334 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		95D1D2FE2CE5CFEA00403334 /* TestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskApp.swift; sourceTree = "<group>"; };
-		95D1D3002CE5CFEA00403334 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95D1D3002CE5CFEA00403334 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		95D1D3022CE5CFEC00403334 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		95D1D3052CE5CFEC00403334 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95D1D30C2CE5D04400403334 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineCategoryView.swift; sourceTree = "<group>"; };
+		95D1D3102CE5D07E00403334 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		95D1D3122CE5D12100403334 /* RoutineTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTaskView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +60,13 @@
 			isa = PBXGroup;
 			children = (
 				95D1D2FE2CE5CFEA00403334 /* TestTaskApp.swift */,
-				95D1D3002CE5CFEA00403334 /* ContentView.swift */,
+				95D1D3002CE5CFEA00403334 /* HomeView.swift */,
+				95D1D30C2CE5D04400403334 /* CustomTabBar.swift */,
 				95D1D3022CE5CFEC00403334 /* Assets.xcassets */,
 				95D1D3042CE5CFEC00403334 /* Preview Content */,
+				95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */,
+				95D1D3102CE5D07E00403334 /* DetailView.swift */,
+				95D1D3122CE5D12100403334 /* RoutineTaskView.swift */,
 			);
 			path = TestTask;
 			sourceTree = "<group>";
@@ -137,8 +149,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				95D1D3012CE5CFEA00403334 /* ContentView.swift in Sources */,
+				95D1D3012CE5CFEA00403334 /* HomeView.swift in Sources */,
+				95D1D30D2CE5D04400403334 /* CustomTabBar.swift in Sources */,
 				95D1D2FF2CE5CFEA00403334 /* TestTaskApp.swift in Sources */,
+				95D1D3112CE5D07E00403334 /* DetailView.swift in Sources */,
+				95D1D3132CE5D12100403334 /* RoutineTaskView.swift in Sources */,
+				95D1D30F2CE5D05900403334 /* RoutineCategoryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
