@@ -14,7 +14,7 @@ struct CategoryDetailView: View {
     @State private var isModalPresented = false
     
     @Environment(\.presentationMode) var presentationMode
-
+    
     var body: some View {
         ZStack(alignment: .bottom) {
             VStack {
@@ -30,7 +30,7 @@ struct CategoryDetailView: View {
                     HStack {
                         Text(category.subtitle)
                             .font(.custom("Cardo-Regular", size: 28))
-                            .foregroundColor(Color.black)
+                            .foregroundColor(Color("text_0C0F39"))
                             .padding(.leading, 20)
                         Spacer()
                     }
@@ -52,7 +52,7 @@ struct CategoryDetailView: View {
                                     selectedItems.insert(index)
                                 }
                             }
-                            .background(Color.white)
+                            .background(Color("white_FFFFFF"))
                             .padding(.horizontal, 16)
                         }
                     }
@@ -76,7 +76,8 @@ struct CategoryDetailView: View {
                                         .padding(.trailing, 20)
                                 }
                                 .foregroundColor(.white)
-                                .frame(width: 160, height: 58)
+                                .frame(height: 58)
+                                .padding(.horizontal, 20)
                                 .background(Color("blue_0C8CE9"))
                                 .cornerRadius(29)
                                 .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)

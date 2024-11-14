@@ -22,7 +22,7 @@ struct ListView: View {
             VStack(alignment: .leading, spacing: 4) {
                 Text(list.title)
                     .font(.custom("Karl-Regular", size: 14))
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("text_0C0F39"))
                 
                 Text("\(list.itemsCount) items")
                     .font(.custom("OpenSans-Regular", size: 12))
@@ -35,6 +35,6 @@ struct ListView: View {
                 .resizable()
                 .frame(width: 12, height: 16)
         }
-        .background(Color.white)
+        .background(Color("white_FFFFFF"))
     }
 }

@@ -18,9 +18,9 @@ struct RoutineCategoryView: View {
                     .frame(width: 92, height: 92)
                 Text(category.title)
                     .font(.custom("Karl-Regular", size: 14))
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("text_0C0F39"))
                     .padding(.horizontal, 15)
-
+                
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .multilineTextAlignment(.leading)
                 Spacer()

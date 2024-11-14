@@ -18,11 +18,11 @@ struct AddNewListView: View {
                 .cornerRadius(8)
             
             Text("ADD TO NEW LIST")
-                    .font(.custom("Karl-Regular", size: 14))
-                    .foregroundColor(Color("blue_0C8CE9"))
+                .font(.custom("Karl-Regular", size: 14))
+                .foregroundColor(Color("blue_0C8CE9"))
             
             Spacer()
         }
-        .background(Color.white)
+        .background(Color("white_FFFFFF"))
     }
 }

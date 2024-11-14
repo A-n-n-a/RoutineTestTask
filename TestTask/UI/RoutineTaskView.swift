@@ -72,7 +72,7 @@ struct RoutineTaskView: View {
                 
                 Button(action: onToggleSelect) {
                     Image(systemName: isSelected ? "checkmark" : "plus")
-                        .foregroundColor(isSelected ? .white : .black)
+                        .foregroundColor(isSelected ? .white : Color("text_0C0F39"))
                         .frame(width: 16, height: 16)
                 }
                 .frame(width: 38, height: 38)

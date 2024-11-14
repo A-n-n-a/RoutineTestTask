@@ -38,8 +38,9 @@ struct CustomNavBar: View {
                 }) {
                     Text(isButtonSelected ? "Cancel" : "Select All")
                         .font(.custom("OpenSans-SemiBold", size: 14))
-                        .foregroundColor(isButtonSelected ? Color("text_575767") : .white)
-                        .frame(width: 90, height: 30)
+                        .foregroundColor(isButtonSelected ? Color("text_575767") : Color("white_FFFFFF"))
+                        .frame(height: 30)
+                        .padding(.horizontal, 15)
                         .background(isButtonSelected ? Color("background_C5C6CC").opacity(0.4) : Color("blue_0C8CE9"))
                         .cornerRadius(15)
                 }

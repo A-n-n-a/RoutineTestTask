@@ -10,13 +10,13 @@ import SwiftUI
 struct MyListsModalView: View {
     let lists: [List]
     @Binding var isPresented: Bool
-
+    
     var body: some View {
         VStack(spacing: 20) {
             HStack {
                 Text("MY LISTS")
                     .font(.custom("Karl-Regular", size: 14))
-                    .foregroundColor(.black)
+                    .foregroundColor(Color("text_0C0F39"))
                 
                 Spacer()
                 
@@ -29,7 +29,7 @@ struct MyListsModalView: View {
                         .opacity(0.5)
                 }
                 .frame(width: 30, height: 30)
-                .foregroundColor(.black)
+                .foregroundColor(Color("text_0C0F39"))
                 .background(Color("background_7F7F7F").opacity(0.2))
                 .cornerRadius(16)
             }
@@ -42,7 +42,7 @@ struct MyListsModalView: View {
                 ForEach(lists, id: \.title) { list in
                     ListView(list: list)
                         .frame(maxWidth: .infinity)
-                        .background(Color.white)
+                        .background(Color("white_FFFFFF"))
                         .padding(.horizontal, 18)
                         .onTapGesture {
                             isPresented = false
@@ -54,7 +54,7 @@ struct MyListsModalView: View {
             Spacer()
         }
         .frame(maxWidth: .infinity)
-        .background(Color.white)
+        .background(Color("white_FFFFFF"))
         .cornerRadius(20)
         .edgesIgnoringSafeArea(.bottom) 
     }
