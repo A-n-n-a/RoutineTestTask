@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct DetailView: View {
-    let title: String
+    let category: Category
     @State private var selectAll = false
     @State private var selectedItems: Set<Int> = []
 
@@ -16,8 +16,8 @@ struct DetailView: View {
         VStack {
             ScrollView {
                 VStack(spacing: 12) {
-                    ForEach(0..<5) { index in
-                        RoutineTaskView(taskTitle: "Task \(index + 1)", isSelected: selectedItems.contains(index)) {
+                    ForEach(Array(0..<category.tasks.count), id: \.self) { index in
+                            RoutineTaskView(task: category.tasks[index], isSelected: selectedItems.contains(index)) {
                             if selectedItems.contains(index) {
                                 selectedItems.remove(index)
                             } else {
@@ -38,7 +38,7 @@ struct DetailView: View {
                 .padding()
             }
         }
-        .navigationBarTitle(title, displayMode: .inline)
+        .navigationBarTitle(category.title, displayMode: .inline)
         .navigationBarItems(trailing: Button("Select All") {
             selectAll.toggle()
             selectedItems = selectAll ? Set(0..<5) : []

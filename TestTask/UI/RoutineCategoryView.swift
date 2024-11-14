@@ -8,16 +8,15 @@
 import SwiftUI
 
 struct RoutineCategoryView: View {
-    let category: String
-    let imageName: String
+    let category: Category
     
     var body: some View {
-        NavigationLink(destination: DetailView(title: category)) {
+        NavigationLink(destination: DetailView(category: category)) {
             HStack {
-                Image(imageName)
+                Image(category.imageName)
                     .resizable()
                     .frame(width: 92, height: 92)
-                Text(category)
+                Text(category.title)
                     .font(.custom("Karl-Regular", size: 14))
                     .foregroundColor(.black)
                     .padding(.horizontal, 15)
@@ -31,8 +30,4 @@ struct RoutineCategoryView: View {
             .padding(.horizontal, 20)
         }
     }
-}
-
-#Preview {
-    RoutineCategoryView(category: "DETAILED MORNING ROUTINE TASKS", imageName: "morning")
 }
