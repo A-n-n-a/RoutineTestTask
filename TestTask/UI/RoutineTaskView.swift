@@ -76,7 +76,7 @@ struct RoutineTaskView: View {
                         .frame(width: 16, height: 16)
                 }
                 .frame(width: 38, height: 38)
-                .background(isSelected ? Color("blue_0C8CE9") : Color("blue_0C8CE9").opacity(0.05))
+                .background(isSelected ? Color("blue_0C8CE9") : Color("blue_0C8CE9").opacity(0.15))
                 .cornerRadius(19)
                 .padding(.top, 16)
                 .padding(.trailing, 16)
