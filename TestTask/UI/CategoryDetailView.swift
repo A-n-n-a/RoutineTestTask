@@ -45,20 +45,42 @@ struct CategoryDetailView: View {
                         .padding(.horizontal, 16)
                     }
                 }
+                .padding(.vertical, 12)
             }
-            .padding(.vertical, 12)
-            
-            if !selectedItems.isEmpty {
-                Button("Add to List") {
-                    // TODO: Show "My Lists" modal
-                }
-                .padding()
-            }
+            .overlay(
+                
+                Group {
+                    if !selectedItems.isEmpty {
+                        Button(action: {
+                            // TODO: Show "My Lists" modal
+                        }) {
+                            HStack {
+                                Image(systemName: "plus")
+                                    .resizable()
+                                    .frame(width: 23, height: 23)
+                                    .padding(.leading, 20)
+                                
+                                Text("ADD TO LIST")
+                                    .font(.custom("Karl-Regular", size: 14))
+                                    .padding(.trailing, 20)
+                            }
+                            .foregroundColor(.white)
+                            .frame(width: 160, height: 58)
+                            .background(Color("blue_0C8CE9"))
+                            .cornerRadius(29)
+                            .shadow(color: Color.black.opacity(0.2), radius: 5, x: 0, y: 5)
+                        }
+                        .padding(.trailing, 24)
+                        .padding(.bottom, 20)
+                    }
+                },
+                alignment: .bottomTrailing
+            )
         }
         .navigationBarTitle(category.title, displayMode: .inline)
         .navigationBarItems(trailing: Button("Select All") {
             selectAll.toggle()
-            selectedItems = selectAll ? Set(0..<5) : []
+            selectedItems = selectAll ? Set(0..<category.tasks.count) : []
         })
     }
 }
