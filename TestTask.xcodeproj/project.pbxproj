@@ -61,10 +61,10 @@
 			children = (
 				95D1D2FE2CE5CFEA00403334 /* TestTaskApp.swift */,
 				95D1D3002CE5CFEA00403334 /* HomeView.swift */,
+				95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */,
 				956370832CE5EB9C007BF4CF /* CustomNavBar.swift */,
 				95D1D30C2CE5D04400403334 /* CustomTabBar.swift */,
 				95D1D3022CE5CFEC00403334 /* Assets.xcassets */,
-				95D1D30E2CE5D05900403334 /* RoutineCategoryView.swift */,
 				95D1D3102CE5D07E00403334 /* DetailView.swift */,
 				95D1D3122CE5D12100403334 /* RoutineTaskView.swift */,
 			);

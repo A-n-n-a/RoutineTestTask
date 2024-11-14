@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-// Detail View for Routine Category
 struct DetailView: View {
     let title: String
     @State private var selectAll = false
@@ -15,31 +14,26 @@ struct DetailView: View {
 
     var body: some View {
         VStack {
-            TabView {
-                ForEach(["carouselImage1", "carouselImage2"], id: \.self) { imageName in
-                    Image(imageName)
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                }
-            }
-            .tabViewStyle(PageTabViewStyle())
-            .frame(height: 200)
-
-            List {
-                ForEach(0..<5) { index in
-                    RoutineTaskView(taskTitle: "Task \(index + 1)", isSelected: selectedItems.contains(index)) {
-                        if selectedItems.contains(index) {
-                            selectedItems.remove(index)
-                        } else {
-                            selectedItems.insert(index)
+            ScrollView {
+                VStack(spacing: 12) {
+                    ForEach(0..<5) { index in
+                        RoutineTaskView(taskTitle: "Task \(index + 1)", isSelected: selectedItems.contains(index)) {
+                            if selectedItems.contains(index) {
+                                selectedItems.remove(index)
+                            } else {
+                                selectedItems.insert(index)
+                            }
                         }
+                        .background(Color.white)
+                        .padding(.horizontal, 16)
                     }
                 }
             }
+            .padding(.vertical, 12)
             
             if !selectedItems.isEmpty {
                 Button("Add to List") {
-                    // Show "My Lists" modal
+                    // TODO: Show "My Lists" modal
                 }
                 .padding()
             }
