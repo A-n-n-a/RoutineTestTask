@@ -18,6 +18,10 @@
 		95D1D3112CE5D07E00403334 /* CategoryDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3102CE5D07E00403334 /* CategoryDetailView.swift */; };
 		95D1D3132CE5D12100403334 /* RoutineTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D1D3122CE5D12100403334 /* RoutineTaskView.swift */; };
 		95DF80602CE65592005C73D4 /* CustomSimpleNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF805F2CE65592005C73D4 /* CustomSimpleNavBar.swift */; };
+		95DF80622CE65EFF005C73D4 /* MyListsModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF80612CE65EFF005C73D4 /* MyListsModalView.swift */; };
+		95DF80642CE661DA005C73D4 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF80632CE661DA005C73D4 /* ListView.swift */; };
+		95DF80662CE661ED005C73D4 /* List.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF80652CE661ED005C73D4 /* List.swift */; };
+		95DF80682CE6685F005C73D4 /* AddNewListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95DF80672CE6685F005C73D4 /* AddNewListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +37,10 @@
 		95D1D3102CE5D07E00403334 /* CategoryDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryDetailView.swift; sourceTree = "<group>"; };
 		95D1D3122CE5D12100403334 /* RoutineTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineTaskView.swift; sourceTree = "<group>"; };
 		95DF805F2CE65592005C73D4 /* CustomSimpleNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSimpleNavBar.swift; sourceTree = "<group>"; };
+		95DF80612CE65EFF005C73D4 /* MyListsModalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListsModalView.swift; sourceTree = "<group>"; };
+		95DF80632CE661DA005C73D4 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		95DF80652CE661ED005C73D4 /* List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = List.swift; sourceTree = "<group>"; };
+		95DF80672CE6685F005C73D4 /* AddNewListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,9 @@
 				95D1D30C2CE5D04400403334 /* CustomTabBar.swift */,
 				95D1D3102CE5D07E00403334 /* CategoryDetailView.swift */,
 				95D1D3122CE5D12100403334 /* RoutineTaskView.swift */,
+				95DF80612CE65EFF005C73D4 /* MyListsModalView.swift */,
+				95DF80632CE661DA005C73D4 /* ListView.swift */,
+				95DF80672CE6685F005C73D4 /* AddNewListView.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -65,6 +76,7 @@
 			children = (
 				956370872CE60BAC007BF4CF /* Category.swift */,
 				956370892CE60BE4007BF4CF /* Task.swift */,
+				95DF80652CE661ED005C73D4 /* List.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -169,12 +181,16 @@
 				95D1D30D2CE5D04400403334 /* CustomTabBar.swift in Sources */,
 				95D1D2FF2CE5CFEA00403334 /* TestTaskApp.swift in Sources */,
 				95D1D3112CE5D07E00403334 /* CategoryDetailView.swift in Sources */,
+				95DF80662CE661ED005C73D4 /* List.swift in Sources */,
 				95D1D3132CE5D12100403334 /* RoutineTaskView.swift in Sources */,
 				95D1D30F2CE5D05900403334 /* RoutineCategoryView.swift in Sources */,
 				956370842CE5EB9C007BF4CF /* CustomNavBar.swift in Sources */,
 				9563708A2CE60BE4007BF4CF /* Task.swift in Sources */,
+				95DF80642CE661DA005C73D4 /* ListView.swift in Sources */,
 				95DF80602CE65592005C73D4 /* CustomSimpleNavBar.swift in Sources */,
+				95DF80682CE6685F005C73D4 /* AddNewListView.swift in Sources */,
 				956370882CE60BAC007BF4CF /* Category.swift in Sources */,
+				95DF80622CE65EFF005C73D4 /* MyListsModalView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

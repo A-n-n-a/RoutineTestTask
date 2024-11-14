@@ -20,7 +20,7 @@ struct CustomNavBar: View {
                 Button(action: {
                     onBackButtonAction()
                 }) {
-                    Image("back")
+                    Image("arrow_left")
                         .resizable()
                         .frame(width: 9, height: 16)
                 }
