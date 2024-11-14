@@ -11,12 +11,16 @@ struct CategoryDetailView: View {
     let category: Category
     @State private var selectAll = false
     @State private var selectedItems: Set<Int> = []
+    
+    @Environment(\.presentationMode) var presentationMode
 
     var body: some View {
         VStack {
             VStack(spacing: 0) {
                 
                 CustomNavBar(title: category.title) {
+                    presentationMode.wrappedValue.dismiss()
+                } onSelectAllAction: {
                     selectAll.toggle()
                     selectedItems = selectAll ? Set(0..<category.tasks.count) : []
                 }
